@@ -21,7 +21,7 @@ class IndividualClientDetails(models.Model):
     client_id = models.ForeignKey("Client", on_delete=models.PROTECT)
     pesel = models.CharField(max_length=11)
     last_name = models.CharField(max_length=255)
-    Gender = models.ForeignKey("Gender", on_delete=models.PROTECT)
+    gender = models.ForeignKey("Gender", on_delete=models.PROTECT)
 
 
 class CompanyClientDetails(models.Model):
