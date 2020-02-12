@@ -16,3 +16,10 @@ class ClientViewSet(viewsets.ModelViewSet):
     """
     queryset = models.Client.objects.all()
     serializer_class = serializers.ClientSerializer
+
+class IndividualClientDetailsViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows Clients to be viewed or edited.
+    """
+    queryset = models.IndividualClientDetails.objects.all()
+    serializer_class = serializers.IndividualClientDetailsSerializer
