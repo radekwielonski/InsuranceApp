@@ -75,6 +75,6 @@ class House(models.Model):
 class InsurancePolicy(models.Model):
     client_id = models.ForeignKey("Client", on_delete=models.PROTECT)
     employee_id = models.ForeignKey("Employee", on_delete=models.PROTECT)
-    car_id = models.ForeignKey("Car", on_delete=models.PROTECT)
-    house_id = models.ForeignKey("House", on_delete=models.PROTECT)
+    car_id = models.ForeignKey("Car", on_delete=models.PROTECT, null=True)
+    house_id = models.ForeignKey("House", on_delete=models.PROTECT, null=True)
     price = models.DecimalField(max_digits=15, decimal_places=3)
