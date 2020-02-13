@@ -25,80 +25,76 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class GenderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Gender
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
+
 
 class AdressSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Adress
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
 
 
 class ClientSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Client
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
 
 
 class IndividualClientDetailsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.IndividualClientDetails
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
 
 
 class CompanyClientDetailsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.CompanyClientDetails
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
+
 
 class PositionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Position
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
+
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Employee
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
+
 
 class GearboxTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.GearboxType
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
+
 
 class FuelTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.FuelType
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
+
 
 class CarCategorySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.CarCategory
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
+
 
 class CarSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Car
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
+
 
 class HouseSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.House
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
+
 
 class InsurancePolicySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.InsurancePolicy
-        generated_fields = SerializerMethods.generate_columns_from_model(model)
-        fields = ('url', *generated_fields)
+        fields = '__all__'
