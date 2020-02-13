@@ -16,8 +16,6 @@ Application backend is written in python with django and django rest framework.
 
 ## Installation
 
-## Installation
-
 #### Clone repository:
 
 ```sh
