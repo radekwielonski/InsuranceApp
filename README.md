@@ -49,7 +49,7 @@ $ pip install -r requirements.txt
 #### Change directory to main project path:
 
 ```sh
-$ cd InsuranceApp
+$ cd backend
 ```
 
 #### Create DB:
