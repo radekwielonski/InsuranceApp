@@ -1,6 +1,6 @@
 # InsuranceApp
 
-Application to store insurance data
+Application to store insurance data //WORK IN PROGRESS
 
 ## Description
 
